@@ -8,6 +8,9 @@ Resources:
       Handler: index.handler
       Runtime: nodejs6.10
       CodeUri: ./
+      MemorySize: 1536
+      Timeout: 30
+      Role: 'arn:aws:iam::707765467002:role/cloudformation-lambda-execution-role'
       Events:
         MyTimeApi:
           Type: Api
